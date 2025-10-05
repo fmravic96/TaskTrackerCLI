@@ -1,12 +1,12 @@
 import typer
 import questionary
-
 from rich.console import Console
 from questionary import Choice
-from task_storage import TaskStorage, Status
 from rich.console import Console
 from rich.table import Table
-from styles import STATUS_CLASS, choice_style, STATUS_COLOR
+
+from task_tracker.styles import STATUS_CLASS, choice_style, STATUS_COLOR
+from task_tracker.task_storage import TaskStorage, Status
 
 console = Console()
 app = typer.Typer()

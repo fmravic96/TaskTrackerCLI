@@ -1,14 +1,26 @@
 [project]
-name = "tasktrackercli"
+name = "task-tracker-cli"
 version = "0.1.0"
-description = "Add your description here"
+description = "Basic task tracker CLI application built with Typer"
+authors = [
+    { name = "Filip Mravic", email = "filip@iconis.hr" }
+]
 readme = "README.md"
 requires-python = ">=3.10"
+
+
 dependencies = [
     "black>=25.9.0",
-    "factory-boy>=3.3.3",
     "pre-commit>=4.3.0",
-    "pytest>=8.4.2",
     "questionary>=2.1.1",
     "typer>=0.19.2",
+    "pytest>=8.4.2",
+    "coverage>=7.10.7",
+    "factory-boy>=3.3.3",
 ]
+
+
+
+
+[project.scripts]
+tasktracker = "task_tracker.commands:app"

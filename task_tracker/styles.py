@@ -1,5 +1,5 @@
 from questionary import Style
-from task_storage import Status
+from task_tracker.task_storage import Status
 
 # Status values
 STATUS_TODO = Status.TODO.value

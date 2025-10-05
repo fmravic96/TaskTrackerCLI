@@ -12,3 +12,7 @@ wheels/
 
 # JSON Files
 *.json
+
+# Tests
+htmlcov/
+.coverage
